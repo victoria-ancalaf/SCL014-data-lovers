@@ -1,13 +1,11 @@
 import {
-    filterPokmn,
-    filterType,
-    filterWek,
-    filterGen,
+filterPokmn,
+filterType,
+filterWek,
+filterGen,
   } from './data.js';
-  
   import data from './data/pokemon/pokemon.js';
-  
-  
+
   // Enlace de primera pantalla a segunda pantalla
   const firstScreen = document.getElementById('firstScreen');
   const secondScreen = document.getElementById('secondScreen');
@@ -15,7 +13,6 @@ import {
   
   // llamado a la data
   const allPokemon = data.pokemon;
-  
   
   // crear var, div dinamicos de las cartas de cada Pokemon(imagen, numero, nomb.)
   const showPokemonInfo = (allPoke) => {
