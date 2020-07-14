@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>hello</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!---       Pantalla Bienvenida       -->
+  <div id="firstScreen">
+    <section class="welcome">Bienvenido entrenador Pokémon, en este sitio
+      encontrarás toda la información Pokémon para comenzar tu travesía.
+    </section>
+    <button type="button" id="btn1" class="btn1">Comenzar</button>
+  </div>
+<p>prueba</p>
+
+  <!---       Segunda pantalla       -->
+  <div id="secondScreen" class="pokemonContainer">
+    <header id="headerGo"></header>
+    <nav id="searchBar">
+               
+      <div class="logotipo">
+        <img src="images/pika.png" alt="">
+      </div>
+
+      <select name="tipo" id="tipo">
+        <option value="0" select="selected">Tipo</option>
+        <option value="grass">Planta</option>
+        <option value="poison">Veneno</option>
+        <option value="normal">Normal</option>
+        <option value="fighting">Lucha</option>
+        <option value="flying">Volador</option>
+        <option value="ground">Tierra</option>
+        <option value="rock">Roca</option>
+        <option value="bug">Bicho</option>
+        <option value="ghost">Fantasma</option>
+        <option value="steel">Acero</option>
+        <option value="fire">Fuego</option>
+        <option value="water">Agua</option>
+        <option value="electric">Eléctrico</option>
+        <option value="psychic">Psíquico</option>
+        <option value="ice">Hielo</option>
+        <option value="dragon">Dragón</option>
+        <option value="fairy">Hada</option>
+        <option value="dark">Siniestro</option>
+      </select>
+
+
+      <div class="logodebilidad">
+        <img src="images/char.png" alt="">
+      </div>
+      <select id="debilidad">
+        <option value="0">Debilidad</option>
+        <option value="grass">Hierba</option>
+        <option value="poison">Veneno</option>
+        <option value="normal">Normal</option>
+        <option value="fighting">Luchador</option>
+        <option value="flying">Volador</option>
+        <option value="ground">Tierra</option>
+        <option value="rock">Roca</option>
+        <option value="bug">Insecto</option>
+        <option value="ghost">Fantasma</option>
+        <option value="steel">Acero</option>
+        <option value="fire">Fuego</option>
+        <option value="water">Agua</option>
+        <option value="electric">Electrico</option>
+        <option value="psychic">Psiquico</option>
+        <option value="ice">Hielo</option>
+        <option value="dragon">Dragon</option>
+        <option value="fairy">Hada</option>
+        <option value="dark">Oscuro</option>
+
+      </select>
+
+
+      <div class="logogeneracion">
+        <img src="images/bol.png" alt="">
+      </div>
+      <select id="generacion">
+
+        <option value="0">Generacion</option>
+        <option value="kanto">Kanto</option>
+        <option value="johto">Johto</option>
+
+      </select>
+
+      <input type="search" id="searchPokemon" class="searchP" placeholder="Buscar por Pokémon" />
+    </nav>
+
+    <main id="pokemonContainer">
+      
+    </main>
+
+    <footer class="foot">
+      <div class="sMedia">
+      <a href="https://www.facebook.com/PokemonGO/"><img src="images/fb.png"></a>
+      <a href="https://twitter.com/PokemonGoApp/"><img src="images/tw.png"></a>
+      </div>
+      <h4>©2020 Niantic, Inc. ©2020 Pokémon. ©1995-2020 Nintendo / Creatures Inc. / GAME FREAK inc.</h4>
+    </footer>
+  </div>
+  <script src="main.js" type="module"> </script>
+</body>
+
 </html>
