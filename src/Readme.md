@@ -136,6 +136,6 @@ Definición de terminado:
 -terminar la segunda pantalla con datos indicados por el usuario
 -testear para recibir el feedback final
 
-PROCESO:TRABAJANDO EN ELLO.
+PROCESO:TRABAJANDO EN ELLO..
 
 
