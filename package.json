@@ -10,7 +10,7 @@
     "test": "jest --verbose --coverage",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
     "start": "serve src/",
-    "deploy": "gh-pages -d src"
+    "deploy": "https://ladypino.github.io/SCL014-data-lovers/src/"
   },
   "dependencies": {
     "@babel/core": "^7.2.2",

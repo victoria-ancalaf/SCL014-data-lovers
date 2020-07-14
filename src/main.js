@@ -73,6 +73,7 @@ filterGen,
     showPokemonInfo(nameFilter);
   });
   
+  // Filtro tipo
   const selectType = document.querySelector('#tipo');
   selectType.addEventListener('change', (e) => {
     const pokemonType = filterType(e, allPokemon);
@@ -80,6 +81,7 @@ filterGen,
     showPokemonInfo(pokemonType);
   });
   
+  // Filtro debilidad
   const selectWeaknesses = document.querySelector('#debilidad');
   selectWeaknesses.addEventListener('change', (e) => {
     const pokemonWek = filterWek(e, allPokemon);
@@ -87,7 +89,7 @@ filterGen,
     showPokemonInfo(pokemonWek);
   });
   
-  
+  // Filtro generación
   const selectGeneration = document.querySelector('#generacion');
   selectGeneration.addEventListener('change', (e) => {
     const pokemonGen = filterGen(e, allPokemon);
@@ -95,3 +97,9 @@ filterGen,
     showPokemonInfo(pokemonGen);
   });
   
+  const selectOrderName = document.querySelector('#filAz');
+  selectOrderName.addEventListener('change', (e) => {
+    const pokeOrder = filterOrder(e, allPokemon);
+    document.getElementById('pokemonContainer').innerHTML = '';
+    showPokemonInfo(pokeOrder);
+  })

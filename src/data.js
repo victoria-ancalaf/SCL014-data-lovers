@@ -39,3 +39,11 @@ export const filterGen = (e, allPokemon) => {
   }
   return allPokemon.filter(pokemon => pokemon.generation.name === pGen);
 };
+
+export const filterOrder = (e, allPokemon) => {
+  const pOrder = e.target.value;
+  if (pOrder === '0') {
+    return allPokemon;
+  }
+  return allPokemon.sort();
+}
