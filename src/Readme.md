@@ -57,9 +57,14 @@
 Posterior a esto y ya con nuestra h1 iniciada comenzamos con los prototipos de alta fidelidad ,en esta etapa tambien ocupamos de baja fidelidad ya que se nos hacia mas certero mirar rapidamente la idea y prototiparla en un aplicacion de alta fidelidad
 
 FOTOS IN FG
+
+
 ![FG1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG1.png)
-
-
+![FG2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG2.png)
+![FG3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG3.png)
+ ![FG4](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG4.png)
+ ![FG5](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG5.png)
+ 
  
  ## USER TESTING
 
