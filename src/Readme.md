@@ -66,8 +66,8 @@ FOTO TRELLO
  FOTOS PROTOTIPO BAJA FIDELIDAD
  
 ![SK1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK1.jpg)
-![SK2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK2.png)
-![SK3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK3.png)
+![SK2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK2.jpg)
+![SK3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK3.jpg)
  
  ## PROTOTIPADO
 
@@ -103,8 +103,7 @@ FOTOS FIGMA
 
  ![FG4](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG4.png)
  
- ![FG6](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG6.png)
- 
+
  
  ## USER TESTING
 
@@ -204,7 +203,6 @@ Definición de terminado:
 PROCESO:TERMINADO
 
 ![H3%20final](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3%20final.png)
- ![FG6](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG6.png)
 
 
 ## Link a Git Hub Pages
