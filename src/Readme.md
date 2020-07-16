@@ -66,7 +66,9 @@ FOTO TRELLO
  FOTOS PROTOTIPO BAJA FIDELIDAD
  
 ![SK1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK1.jpg)
+
 ![SK2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK2.jpg)
+
 ![SK3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK3.jpg)
  
  ## PROTOTIPADO
