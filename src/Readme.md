@@ -103,8 +103,6 @@ FOTOS FIGMA
 
  ![FG4](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG4.png)
  
- ![FG5](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG5.png)
- 
  ![FG6](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG6.png)
  
  
@@ -205,7 +203,8 @@ Definición de terminado:
 
 PROCESO:TERMINADO
 
-https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3%20final.png
+![H3%20final](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3%20final.png)
+ ![FG6](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG6.png)
 
 
 ## Link a Git Hub Pages
