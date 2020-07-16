@@ -25,13 +25,26 @@
 
  Para comenzar a trabajar nuestro proyecto nos organizamos mediante trello dando usabilidad a esta funcion en base a mini calendarios. Una vez que definimos esto comenzamos con las etapas del diseño.
 
+FOTO TRELLO
 
+![trello1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/trello1.png)
  
  ## RESEARCH
  en esta etapa comenzamos a realizar investigacion de nuestro usuario mediante encuestas a jugadores de toda indole de pokemon Go, para poder entender mejor que es lo ellos necesitaban asi mismo realizamos investigacion en las diferentes paginas web tales como grupos de fans u paginas oficiales del juego
 
  FOTO ENCUESTAS
 
+![enc1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/enc1.png)
+
+![enc2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/enc2.png)
+
+![enc3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/enc3.png)
+
+ ![enc4](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/enc4.png)
+ 
+ ![enc5](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/enc5.png)
+ 
+ ![enc6](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/enc6.png)
  
  
  ## SINTESIS Y DEFINICION
@@ -39,7 +52,10 @@
  aqui simplemente recolectamos toda la informacion que nos entregaron nuestros usiarios llegando a entender que es lo que realmente necesitaban tales como filtros especificos u informacion especifica, nos concentramos en realizar un diagrama basico para dar con la problematica la informacion y posible solucion. en esta etapa nacieron nuestras primeras dos historias de usuarios h1 (detallo cada historia al final de la lectura)
 
  
- FOTO DIAGRAMA POST-IT
+ FOTO DIAGRAMA
+ 
+ ![DIAG2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/DIAG2.jpg)
+
 
 
  
@@ -47,23 +63,49 @@
 
  En esta etapa comenzamos a realizar un brainstorming para concluir estas ideas en  prototipos de baja  fidelidad  sketches basicamente de papel y lapiz basandonos siempre en nestro trabajo ya realizado.Todo esto a traves de mini historias de usuarios realizadas en nuestro research(adjunto informacion historias de usuarios al final).
 
- FOTOS PROTOTIPOS BAJA FIDELIDAD
-
-
-
+ FOTOS PROTOTIPO BAJA FIDELIDAD
+ 
+![SK1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK1.jpg)
+![SK2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK2.png)
+![SK3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/SK3.png)
  
  ## PROTOTIPADO
 
 Posterior a esto y ya con nuestra h1 iniciada comenzamos con los prototipos de alta fidelidad ,en esta etapa tambien ocupamos de baja fidelidad ya que se nos hacia mas certero mirar rapidamente la idea y prototiparla en un aplicacion de alta fidelidad
 
-FOTOS IN FG
+FOTOS INVISION
+
+![INV1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV1.png)
+
+![INV2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV2.png)
+
+![INV3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV3.png)
+
+ ![INV4](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV4.png)
+ 
+ ![INV5](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV5.png)
+ 
+ ![INV6](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV6.png)
+ 
+  ![INV7](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV7.png)
+ 
+
+
+
+FOTOS FIGMA
 
 
 ![FG1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG1.png)
+
 ![FG2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG2.png)
+
 ![FG3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG3.png)
+
  ![FG4](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG4.png)
+ 
  ![FG5](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG5.png)
+ 
+ ![FG6](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/FG6.png)
  
  
  ## USER TESTING
@@ -71,6 +113,17 @@ FOTOS IN FG
 Posterior a esto con nuestra h1 terminada procedimos a ponerlas a prueba con usuarios reales, testeandolas en 5 usuarios dandonos nuestro primer feedback, tomandolo y en base a esto creamos pequeños arreglos y cambios para realizar un segundo testeo al cual fue el final para lograr el objetivo deseado se procedio a ejecutar el codigo y dar formato a la pagina real todo en base a nuestra primera h1
 
 FOTOS TESTEO
+
+![t1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/t1.jpg)
+
+ ![t2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/t2.jpg)
+ 
+ ![t3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/t3.jpg)
+ 
+ ![t4](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/t4.jpg)
+ 
+
+
 
 Claramente este proceso se repitio varias veces en las diferentes historias de usuario no en su completitud pero si algunas fases como un prototipado nuevo o un feddback nuevo y directo con usuarios reales  al terminar cada historia de usuario
 
@@ -106,6 +159,10 @@ Tareas a realizar
 
 PROCESO: TERMINADA (FOTO TRELLO)
 
+![h1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/h1.png)
+ 
+
+
 
  ## H2:
 como entrenador pokemon, quisiera que tuviese una segunda pantalla , con la imagen, nombre y numero del pokemon
@@ -129,6 +186,10 @@ Tareas
 
  PROCESO:TERMINADO(FOTO TRELLO)
 
+![h2.1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/h2.1.png)
+ 
+
+![h2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/h2.png)
  
  ## H3:
  Como entrenador pokemon en la segunda pantalla de la pagina me gustaria que se pudiese filtrar por tipo ,generacion y debilidad y ademas que los colores fuesen acorde a los de la aplicacion movil(verdes,azules ,amarillos)
@@ -142,6 +203,12 @@ Definición de terminado:
 -terminar la segunda pantalla con datos indicados por el usuario
 -testear para recibir el feedback final
 
-PROCESO:TRABAJANDO EN ELLO..
+PROCESO:TERMINADO
+
+https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3%20final.png
+
+
+## Link a Git Hub Pages
+
 
 
