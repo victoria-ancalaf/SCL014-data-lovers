@@ -1,27 +1,18 @@
-// estas funciones son de ejemplo
-
-export const example = () => 'example';
-
-export const anotherExample = () => 'OMG';
-
 
 // 1 filtro de nuestro proyecto buscador :D
-export const filterPokmn = (e, allPokemon) => {
-  const term = e.target.value.toLowerCase();
+export const filterPokmn = (term, allPokemon) => {
   return allPokemon.filter(pokemon => pokemon.name.indexOf(term) !== -1);
 };
 
 // Filtro para buscar por tipo de Pokémon
-export const filterType = (e, allPokemon) => {
-  const pType = e.target.value;// valor de lo que ingresa el usuario
+export const filterType = (pType, allPokemon) => {
   if (pType === '0') {
     return allPokemon;
   }
   return allPokemon.filter(pokemon => pokemon.type[0] === pType || pokemon.type[1] === pType);
 };// filtra los pokemones que tengan dos tipos
 
-export const filterWek = (e, allPokemon) => {
-  const pWek = e.target.value;
+export const filterWek = (pWek, allPokemon) => {
   if (pWek === '0') {
     return allPokemon;
   }
@@ -32,8 +23,7 @@ export const filterWek = (e, allPokemon) => {
 };
 
 
-export const filterGen = (e, allPokemon) => {
-  const pGen = e.target.value;
+export const filterGen = (pGen, allPokemon) => {
   if (pGen === '0') {
     return allPokemon;
   }

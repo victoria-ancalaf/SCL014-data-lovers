@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -18,7 +20,7 @@
 
 
   <!---       Segunda pantalla       -->
-  <div id="secondScreen" class="pokemonContainer">
+  <div id="secondScreen" class="container">
     <header id="headerGo"></header>
     <nav id="searchBar">
                
@@ -86,9 +88,23 @@
 
       </select>
 
-      <input type="search" id="searchPokemon" class="searchP" placeholder="Buscar por Pokémon" />
+      <input type="search" id="searchPokemon" class="searchP" placeholder="Buscar por Pokémon"></input>
     </nav>
 
+    <!-- boton para abrir el modal -->
+    <button id="myBtn">Abrir modal</button>
+    
+    <!-- caja del  Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal contenido-->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Informacion acerca d todos los pokemones </p>
+      </div>
+    
+    </div>
+    
     <main id="pokemonContainer">
       
     </main>

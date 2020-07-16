@@ -3,6 +3,7 @@ import {
   filterType,
   filterWek,
   filterGen,
+
 } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
@@ -12,7 +13,7 @@ const secondScreen = document.getElementById('secondScreen');
 const btn1 = document.getElementById('btn1');
 
 // llamado a la data
-const allPokemon = data.pokemon;
+export const allPokemon = data.pokemon;
 
 // crear var, div dinamicos de las cartas de cada Pokemon(imagen, numero, nomb.)
 const showPokemonInfo = (allPoke) => {
@@ -28,6 +29,7 @@ const showPokemonInfo = (allPoke) => {
     const mayus = pokeName.charAt(0).toUpperCase() + pokeName.slice(1);
     const typePokemon = document.createElement('p');
     const typePokemon2 = document.createElement('p');
+    pokeCard.setAttribute('id', 'pCard');
 
     // le damos una clase y le pasamos el parametro
     pokeCard.classList.add('nameCard');
@@ -68,7 +70,8 @@ btn1.addEventListener('click', () => {
 // Buscador por nombre
 const pokemonSearchBar = document.getElementById('searchPokemon');
 pokemonSearchBar.addEventListener('keyup', (e) => {
-  const nameFilter = filterPokmn(e, allPokemon);
+  const term = e.target.value.toLowerCase();
+  const nameFilter = filterPokmn(term, allPokemon);
   document.getElementById('pokemonContainer').innerHTML = '';// Borro todas las cartas de pokemon
   showPokemonInfo(nameFilter);
 });
@@ -76,7 +79,8 @@ pokemonSearchBar.addEventListener('keyup', (e) => {
 // Filtro tipo
 const selectType = document.querySelector('#tipo');
 selectType.addEventListener('change', (e) => {
-  const pokemonType = filterType(e, allPokemon);
+  const pType = e.target.value;// valor de lo que ingresa el usuario
+  const pokemonType = filterType(pType, allPokemon);
   document.getElementById('pokemonContainer').innerHTML = '';
   showPokemonInfo(pokemonType);
 });
@@ -84,14 +88,41 @@ selectType.addEventListener('change', (e) => {
 // Filtro debilidad
 const selectWeaknesses = document.querySelector('#debilidad');
 selectWeaknesses.addEventListener('change', (e) => {
-  const pokemonWek = filterWek(e, allPokemon);
+  const pWek = e.target.value;
+  const pokemonWek = filterWek(pWek, allPokemon);
   document.getElementById('pokemonContainer').innerHTML = '';
   showPokemonInfo(pokemonWek);
 });
 // Filtro generación
 const selectGeneration = document.querySelector('#generacion');
 selectGeneration.addEventListener('change', (e) => {
-  const pokemonGen = filterGen(e, allPokemon);
+  const pGen = e.target.value;
+  const pokemonGen = filterGen(pGen, allPokemon);
   document.getElementById('pokemonContainer').innerHTML = '';
   showPokemonInfo(pokemonGen);
 });
+// FUNCIONALIDAD DEL MODAL
+// enlazamos y traemos el modal
+const modal = document.getElementById('myModal');
+// boton que abre el modal enlace
+const btn = document.getElementById('myBtn');
+
+// boton que cierra el modal
+const span = document.getElementsByClassName('close')[0];
+
+// para eu cuando el usuario haga click se habra el modal
+btn.onclick = function () {
+  modal.style.display = 'block';
+};
+
+// para que cuando el usuario haga click cierre el modall
+span.onclick = function () {
+  modal.style.display = 'none';
+};
+
+// para que cuando el usuario haga click cierre en cualquier lugar
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};

@@ -1,23 +1,25 @@
-import { example, anotherExample } from '../src/data.js';
+import {
+  filterType,
+  filterGen,
+  filterWek,
+}
+  from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('filterType', () => {
+  it('obtener cuantos tipos pueden tener', () => {
+    expect(filterType).toHaveLength(2);
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+  describe('filterGen', () => {
+    it('is a function', () => {
+      expect(filterGen).toHaveLength(2);
+    });
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  describe('filterWek', () => {
+    it('Maximo de tipos de debilidad', () => {
+      expect(filterWek).toHaveLength(2);
+    });
   });
 });
