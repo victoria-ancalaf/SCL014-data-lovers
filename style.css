@@ -58,10 +58,12 @@
   }
   
   /* Segunda Pantalla (principal)*/
-  .pokemonContainer {
+  .container {
     width: 100%;
     display: none;
     flex-wrap: wrap;
+   
+   
   }   
   
   /* Header */
@@ -73,7 +75,7 @@
   background-size: cover;
   background-position: center;
   }
-  /* Buscador */
+  /* Menú filtros */
   #searchBar {
   background:  url(images/lupa2.png);
   background-repeat: no-repeat;
@@ -113,7 +115,7 @@
     margin-inline-end: -41px;
   }
   
-  #tipo{
+  #tipo {
     display: flex;
     flex-wrap: wrap;
     padding-left: 40px;
@@ -128,16 +130,11 @@
     margin-block-end: 7px;
     margin-block-start: 7px;
   }
-  
-  
-  
-  
+    
   #tipo:hover{
     cursor: pointer;
     background-color: rgba(245, 245, 135, 0.705);
-    
   }
-  
   
   .logodebilidad > img{
       width: 43px;
@@ -174,7 +171,6 @@
     margin-right: -47px;
   }
    
-  
   #generacion {
     display: flex;
     flex-wrap: wrap;
@@ -192,14 +188,11 @@
     margin-block-start: 7px;
   }
     
-   
   #generacion:hover {
     cursor: pointer;
     background-color: rgba(127, 245, 123, 0.801);
-    
   }
   
-
   /* Contenedor de Pokémon */
   #pokemonContainer {
     background:  url(images/b6.png);
@@ -212,6 +205,7 @@
   align-content: start;
   flex-wrap: wrap;
   justify-content: center;
+  
   }
   
   /* Cartitas Pokémon */
@@ -232,6 +226,7 @@
   margin-inline-end: 12px;
   margin-block-start: 5px;
   margin-top: 17px;
+  
   }
   
   .numeros {
@@ -239,8 +234,8 @@
   width: 5em;
   font-family: "Roboto" ,sans-serif;
   font-size: small;
-  
   } 
+
   .nombres{
   border-radius: 8px;
   width: 5em;
@@ -249,7 +244,70 @@
   font-size: large;
   text-align: center;
   }
+
+  /* Modal */
+  .mModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #f5c62f;;
+  border-radius: 5px;
+  background-color:rgb(238, 225, 172);
+  width: 500px;
+  padding: 10px 15px;
+  font-family: "Roboto" ,sans-serif;
+ 
+  }
+
+   .smModal  {
+    position: absolute; 
+    margin: 50%;
+    background: rgb(0,0,0); 
   
+}
+  
+  .mHeader {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #f5c62f;
+  background-color: #27a38db8;
+
+  }
+  
+  .mTitle {
+  font-size: 1.25rem;
+  color: #2f312f;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto slab";
+  }
+  
+  .closeBtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 25px;
+  font-weight: bold;
+  margin-inline-end: 0em;
+ 
+  }
+  
+  .closeBtn:hover {
+    cursor: pointer;
+    color: rgba(145, 148, 145, 0.801);
+  }
+  .mContent {
+  padding: 10px 15px;
+  background-color:rgb(238, 225, 172);
+
+  }
+
+
   /* Info tipos de Pokémon */
   .grass {
   background-color: #14be14;;
@@ -451,14 +509,12 @@
   display: flex;
   height: 70px;
   width: 100%;
-  background-color:#b9e8b2;
+  background-color:#7ed782ba;
   flex-wrap: nowrap;
   padding: 0 4rem;
   justify-content: space-between;
   align-items: center;
- 
   }
-  
   
   /*redes sociales*/
   .sMedia {
@@ -470,13 +526,70 @@
   flex-direction: row;  
   align-items: center;
   }
-  
   /*dar formaro img redes sociales*/
   a > img {
   width: 50px;
   padding: 5px;
   border-radius: 20%;
   }
-  
-  
-  
+
+
+/* Reponsive */
+      /* Celulares */
+  @media only screen and (max-width : 380px) {
+    .welcome {
+      margin-left: 2rem;
+    }
+    .btn1 {
+      margin-left: 6rem;
+      width: 50%;
+      background-color: #ffcb05;
+    }
+    .container #searchBar .nameCard {
+      flex-direction: column;
+    }
+    logotipo > img {
+      display: none;
+    }
+    .logotipo > img {
+      display: none;
+    }
+    .logodebilidad > img {
+      display: none;
+    }
+    .logogeneracion > img {
+      display: none;
+    }
+
+    #headerGo {
+      background: url(images/header-celular.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 108px;
+    }
+
+    #searchBar {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    #tipo, #debilidad, #generacion, .searchP {
+      width: 100%;
+      flex-direction:column;
+      text-align: center;
+      border: none;
+      border-radius: 0;
+      margin: 0;
+      font-size: 15px;
+      position: initial;
+      text-align: center;
+    }
+    .nameCard {
+      width: 30%;
+      margin: 16px;
+      padding: 16px;
+    }
+    .foot {
+      display: none;
+    }
+  }
+ 

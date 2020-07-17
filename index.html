@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -18,34 +20,34 @@
 
 
   <!---       Segunda pantalla       -->
-  <div id="secondScreen" class="pokemonContainer">
+  <div id="secondScreen" class="container">
     <header id="headerGo"></header>
     <nav id="searchBar">
-               
+
       <div class="logotipo">
         <img src="images/pika.png" alt="">
       </div>
 
       <select name="tipo" id="tipo">
-        <option value="0" select="selected">Tipo</option>
-        <option value="grass">Planta</option>
-        <option value="poison">Veneno</option>
+        <option value="0" select="selected">Type</option>
+        <option value="grass">Grass</option>
+        <option value="poison">Poison</option>
         <option value="normal">Normal</option>
-        <option value="fighting">Lucha</option>
-        <option value="flying">Volador</option>
-        <option value="ground">Tierra</option>
-        <option value="rock">Roca</option>
-        <option value="bug">Bicho</option>
-        <option value="ghost">Fantasma</option>
-        <option value="steel">Acero</option>
-        <option value="fire">Fuego</option>
-        <option value="water">Agua</option>
-        <option value="electric">Eléctrico</option>
-        <option value="psychic">Psíquico</option>
-        <option value="ice">Hielo</option>
-        <option value="dragon">Dragón</option>
-        <option value="fairy">Hada</option>
-        <option value="dark">Siniestro</option>
+        <option value="fighting">Fighting</option>
+        <option value="flying">Flying</option>
+        <option value="ground">Ground</option>
+        <option value="rock">Rock</option>
+        <option value="bug">Bug</option>
+        <option value="ghost">Ghost</option>
+        <option value="steel">Steel</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="electric">Electric</option>
+        <option value="psychic">Psychic</option>
+        <option value="ice">Ice</option>
+        <option value="dragon">Dragon</option>
+        <option value="fairy">Fairy</option>
+        <option value="dark">Dark</option>
       </select>
 
 
@@ -53,24 +55,24 @@
         <img src="images/char.png" alt="">
       </div>
       <select id="debilidad">
-        <option value="0">Debilidad</option>
-        <option value="grass">Planta</option>
-        <option value="poison">Veneno</option>
-        <option value="fighting">Lucha</option>
-        <option value="flying">Volador</option>
-        <option value="ground">Tierra</option>
-        <option value="rock">Roca</option>
-        <option value="bug">Bicho</option>
-        <option value="ghost">Fantasma</option>
-        <option value="steel">Acero</option>
-        <option value="fire">Fuego</option>
-        <option value="water">Agua</option>
-        <option value="electric">Eléctrico</option>
-        <option value="psychic">Psíquico</option>
-        <option value="ice">Hielo</option>
-        <option value="dragon">Dragón</option>
-        <option value="fairy">Hada</option>
-        <option value="dark">Siniestro</option>
+        <option value="0">Weaknesses</option>
+        <option value="grass">Grass</option>
+        <option value="poison">Poison</option>
+        <option value="fighting">Fighting</option>
+        <option value="flying">Flying</option>
+        <option value="ground">Ground</option>
+        <option value="rock">Rock</option>
+        <option value="bug">Bug</option>
+        <option value="ghost">Ghost</option>
+        <option value="steel">Steel</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="electric">Electric</option>
+        <option value="psychic">Psychic</option>
+        <option value="ice">Ice</option>
+        <option value="dragon">Dragon</option>
+        <option value="fairy">Fairy</option>
+        <option value="dark">Dark</option>
 
       </select>
 
@@ -80,23 +82,34 @@
       </div>
       <select id="generacion">
 
-        <option value="0">Generación</option>
+        <option value="0">Generation</option>
         <option value="kanto">Kanto</option>
         <option value="johto">Johto</option>
 
       </select>
 
-      <input type="search" id="searchPokemon" class="searchP" placeholder="Buscar por Pokémon" />
+      <input type="search" id="searchPokemon" class="searchP" placeholder="Search by Pokemon" />
     </nav>
 
-    <main id="pokemonContainer">
-      
-    </main>
+    <main id="pokemonContainer"></main>
 
+    <!---       modal       -->
+    <div id="smModal" class="smModal">
+      <div id="pokeModal" class="mModal">
+        <div class="mHeader">
+          <div id="titleName" class="mTitle"></div>
+          <button id="closeModal" class="closeBtn">&times;</button>
+        </div>
+        <div id="infoContent" class="mContent"></div>
+        <div id="mSize" class="mContent"></div>
+        <div id="mStats" class="mContent"></div>
+        <div id="mResis" class="mContent"></div>
+      </div>
+    </div>
     <footer class="foot">
       <div class="sMedia">
-      <a href="https://www.facebook.com/PokemonGO/"><img src="images/fb.png"></a>
-      <a href="https://twitter.com/PokemonGoApp/"><img src="images/tw.png"></a>
+        <a href="https://www.facebook.com/PokemonGO/"><img src="images/fb.png"></a>
+        <a href="https://twitter.com/PokemonGoApp/"><img src="images/tw.png"></a>
       </div>
       <h4>©2020 Niantic, Inc. ©2020 Pokémon. ©1995-2020 Nintendo / Creatures Inc. / GAME FREAK inc.</h4>
     </footer>
