@@ -206,19 +206,13 @@ PROCESO:TERMINADO
 
 ![H3%20final](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3%20final.png)
 
-
 ![H3FINAL](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3FINAL.png)
-
 
 ![H3FINAL1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3FINAL1.png)
 
-
 ![H3FINAL2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3FINAL2.png)
 
-
 ![MODAL](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/MODAL.png)
-
-
 
 
 ## Link a Git Hub Pages
