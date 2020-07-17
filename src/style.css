@@ -62,6 +62,8 @@
     width: 100%;
     display: none;
     flex-wrap: wrap;
+   
+   
   }   
   
   /* Header */
@@ -203,6 +205,7 @@
   align-content: start;
   flex-wrap: wrap;
   justify-content: center;
+  
   }
   
   /* Cartitas Pokémon */
@@ -223,6 +226,7 @@
   margin-inline-end: 12px;
   margin-block-start: 5px;
   margin-top: 17px;
+  
   }
   
   .numeros {
@@ -230,8 +234,8 @@
   width: 5em;
   font-family: "Roboto" ,sans-serif;
   font-size: small;
-  
   } 
+
   .nombres{
   border-radius: 8px;
   width: 5em;
@@ -240,7 +244,70 @@
   font-size: large;
   text-align: center;
   }
+
+  /* Modal */
+  .mModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #f5c62f;;
+  border-radius: 5px;
+  background-color:rgb(238, 225, 172);
+  width: 500px;
+  padding: 10px 15px;
+  font-family: "Roboto" ,sans-serif;
+ 
+  }
+
+   .smModal  {
+    position: absolute; 
+    margin: 50%;
+    background: rgb(0,0,0); 
   
+}
+  
+  .mHeader {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #f5c62f;
+  background-color: #27a38db8;
+
+  }
+  
+  .mTitle {
+  font-size: 1.25rem;
+  color: #2f312f;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto slab";
+  }
+  
+  .closeBtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 25px;
+  font-weight: bold;
+  margin-inline-end: 0em;
+ 
+  }
+  
+  .closeBtn:hover {
+    cursor: pointer;
+    color: rgba(145, 148, 145, 0.801);
+  }
+  .mContent {
+  padding: 10px 15px;
+  background-color:rgb(238, 225, 172);
+
+  }
+
+
   /* Info tipos de Pokémon */
   .grass {
   background-color: #14be14;;
@@ -465,48 +532,6 @@
   padding: 5px;
   border-radius: 20%;
   }
-  body {font-family: Arial, Helvetica, sans-serif;}
-
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* contenido del modal */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* boton cerrar modal */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-
 
 
 /* Reponsive */
@@ -514,7 +539,6 @@
   @media only screen and (max-width : 380px) {
     .welcome {
       margin-left: 2rem;
-      width: 280px;
     }
     .btn1 {
       margin-left: 6rem;

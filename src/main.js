@@ -3,7 +3,6 @@ import {
   filterType,
   filterWek,
   filterGen,
-
 } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
@@ -11,9 +10,23 @@ import data from './data/pokemon/pokemon.js';
 const firstScreen = document.getElementById('firstScreen');
 const secondScreen = document.getElementById('secondScreen');
 const btn1 = document.getElementById('btn1');
-
+const titleName = document.getElementById('titleName');
+const infoContent = document.getElementById('infoContent');
+const mSize = document.getElementById('mSize');
+const mStats = document.getElementById('mStats');
+const mResis = document.getElementById('mResis');
+const pokeModal = document.getElementById('pokeModal');
 // llamado a la data
 export const allPokemon = data.pokemon;
+
+const showModal = (pokemon) => {
+  pokeModal.style.display = 'block';
+  titleName.innerHTML = pokemon.name.toUpperCase();
+  infoContent.innerHTML = `About: ${pokemon.about}`;
+  mSize.innerHTML = `Size: ${pokemon.size.height}, ${pokemon.size.weight}`;
+  mStats.innerHTML = `Eggs: ${pokemon.egg}`;
+  mResis.innerHTML = `Resistant: ${pokemon.resistant}`;
+};
 
 // crear var, div dinamicos de las cartas de cada Pokemon(imagen, numero, nomb.)
 const showPokemonInfo = (allPoke) => {
@@ -39,6 +52,11 @@ const showPokemonInfo = (allPoke) => {
     if ((pokeType.length) > 1) {
       typePokemon2.classList.add(pokeType[1]);
     }
+
+    pokeCard.addEventListener('click', () => {
+      showModal(pokemon);
+    });
+
     // le ponemos ih para que la variable se refleje
     num.innerHTML = `# ${pokeNum}`;
     names.innerHTML = mayus;
@@ -65,6 +83,12 @@ btn1.addEventListener('click', () => {
   firstScreen.style.display = 'none';
   secondScreen.style.display = 'flex';
   showPokemonInfo(allPokemon);
+});
+
+// Modal
+const closeModal = document.getElementById('closeModal');
+closeModal.addEventListener('click', () => {
+  pokeModal.style.display = 'none';
 });
 
 // Buscador por nombre
@@ -101,28 +125,3 @@ selectGeneration.addEventListener('change', (e) => {
   document.getElementById('pokemonContainer').innerHTML = '';
   showPokemonInfo(pokemonGen);
 });
-// FUNCIONALIDAD DEL MODAL
-// enlazamos y traemos el modal
-const modal = document.getElementById('myModal');
-// boton que abre el modal enlace
-const btn = document.getElementById('myBtn');
-
-// boton que cierra el modal
-const span = document.getElementsByClassName('close')[0];
-
-// para eu cuando el usuario haga click se habra el modal
-btn.onclick = function () {
-  modal.style.display = 'block';
-};
-
-// para que cuando el usuario haga click cierre el modall
-span.onclick = function () {
-  modal.style.display = 'none';
-};
-
-// para que cuando el usuario haga click cierre en cualquier lugar
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-};

@@ -1,5 +1,6 @@
 
 // 1 filtro de nuestro proyecto buscador :D
+// eslint-disable-next-line arrow-body-style
 export const filterPokmn = (term, allPokemon) => {
   return allPokemon.filter(pokemon => pokemon.name.indexOf(term) !== -1);
 };
