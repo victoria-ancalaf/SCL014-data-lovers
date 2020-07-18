@@ -30,7 +30,7 @@ FOTO TRELLO
 ![trello1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/trello1.png)
  
  ## RESEARCH
- en esta etapa comenzamos a realizar investigacion de nuestro usuario mediante encuestas a jugadores de toda indole de pokemon Go, para poder entender mejor que es lo ellos necesitaban asi mismo realizamos investigacion en las diferentes paginas web tales como grupos de fans u paginas oficiales del juego
+ en esta etapa comenzamos a realizar investigacion de nuestro usuario mediante encuestas a jugadores de toda indole de pokemon Go, para poder entender mejor que es lo ellos necesitaban asi mismo realizamos investigacion en las diferentes paginas web tales como grupos de fans u paginas oficiales del juego,Asi mismo logramos obtener un gran feedback con jugadores pokemon mediante una video llamada donde estos utilizaron la aplicacion y interactuaron con ella.
 
  FOTO ENCUESTAS
 
@@ -206,8 +206,16 @@ PROCESO:TERMINADO
 
 ![H3%20final](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3%20final.png)
 
+![H3FINAL](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3FINAL.png)
+
+![H3FINAL1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3FINAL1.png)
+
+![H3FINAL2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/H3FINAL2.png)
+
+![MODAL](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/MODAL.png)
 
 ## Link a Git Hub Pages
 
+https://ladypino.github.io/SCL014-data-lovers/src/
 
 
