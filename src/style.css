@@ -258,16 +258,9 @@
   width: 500px;
   padding: 10px 15px;
   font-family: "Roboto" ,sans-serif;
- 
   }
 
-   .smModal  {
-    position: absolute; 
-    margin: 50%;
-    background: rgb(0,0,0); 
-  
-}
-  
+
   .mHeader {
   display: flex;
   padding: 10px 15px;
@@ -275,7 +268,6 @@
   align-items: center;
   border-bottom: 3px solid #f5c62f;
   background-color: #27a38db8;
-
   }
   
   .mTitle {
