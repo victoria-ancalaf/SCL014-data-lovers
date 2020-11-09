@@ -11,23 +11,32 @@
 
 <body>
   <!---       Pantalla Bienvenida       -->
-  <div id="firstScreen">
-    <section class="welcome">Bienvenido entrenador Pokémon, en este sitio
-      encontrarás toda la información Pokémon para comenzar tu travesía.
+  <div id="firstScreen" class="home">
+    <section class="home-left"></section>
+    <section class="home-right">
+      <div class="info-text">
+      <h1 class="title">
+        ¡Bienvenido!
+      </h1>
+      <p class="welcome-text">
+        Aquí podrás revisar la información de los Pokémon<br></br>
+        de la región de Kanto y Johto, usando filtros para<br></br> 
+        buscar por nombre, tipo, debilidad y otros. 
+      </p>
+    </div>
+    <!-- <img class="pika" src="/src/images/pika.png"/> -->
+    <div class="button-home">
+      <button id="btn-home" class="btn-home">Comenzar</button>
+    </div>
     </section>
-    <button type="button" id="btn1" class="btn1">Comenzar</button>
   </div>
 
 
   <!---       Segunda pantalla       -->
   <div id="secondScreen" class="container">
-    <header id="headerGo"></header>
-    <nav id="searchBar">
-
-      <div class="logotipo">
-        <img src="images/pika.png" alt="">
-      </div>
-
+   
+    <nav id="searchBar" class="navbar">
+      
       <select name="tipo" id="tipo">
         <option value="0" select="selected">Type</option>
         <option value="grass">Grass</option>
@@ -50,9 +59,7 @@
         <option value="dark">Dark</option>
       </select>
 
-      <div class="logodebilidad">
-        <img src="images/char.png" alt="">
-      </div>
+     
       <select id="debilidad">
         <option value="0">Weaknesses</option>
         <option value="grass">Grass</option>
@@ -74,40 +81,38 @@
         <option value="dark">Dark</option>
       </select>
 
-      <div class="logogeneracion">
-        <img src="images/bol.png" alt="">
-      </div>
+      
       <select id="generacion">
-
         <option value="0">Generation</option>
         <option value="kanto">Kanto</option>
         <option value="johto">Johto</option>
-
       </select>
 
-      <input type="search" id="searchPokemon" class="searchP" placeholder="Search by Pokemon" />
+      <input type="search" id="searchPokemon" class="searchP" placeholder="Busca por nombre" />
+   
     </nav>
 
     <main id="pokemonContainer"></main>
 
     <!---       modal       -->
       <div id="pokeModal" class="mModal">
-        <div class="mHeader">
-          <div id="titleName" class="mTitle"></div>
-          <button id="closeModal" class="closeBtn">&times;</button>
+        <button id="closeModal" class="closeBtn">&times;</button>
+        <div id="innerModal" class="innerModal">  
+          <div id="imgModal"></div> 
+          <div id="nameModal"></div>
+          
+          <div class="mContent">
+            <div id="modalType"></div>
+            <div id="modalWeight"></div>
+            <div id="modalHeight"></div>
+          </div> 
+          <div id="infoContent" class="mContent"></div>
+          <div id="mResis" class="mContent"></div>
+        
         </div>
-        <div id="infoContent" class="mContent"></div>
-        <div id="mSize" class="mContent"></div>
-        <div id="mStats" class="mContent"></div>
-        <div id="mResis" class="mContent"></div>
+        
       </div>
-    <footer class="foot">
-      <div class="sMedia">
-        <a href="https://www.facebook.com/PokemonGO/"><img src="images/fb.png"></a>
-        <a href="https://twitter.com/PokemonGoApp/"><img src="images/tw.png"></a>
-      </div>
-      <h4>©2020 Niantic, Inc. ©2020 Pokémon. ©1995-2020 Nintendo / Creatures Inc. / GAME FREAK inc.</h4>
-    </footer>
+    
   </div>
   <script src="main.js" type="module"> </script>
 </body>

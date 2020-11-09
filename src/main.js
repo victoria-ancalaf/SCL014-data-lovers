@@ -9,11 +9,13 @@ import data from './data/pokemon/pokemon.js';
 // Enlace de primera pantalla a segunda pantalla
 const firstScreen = document.getElementById('firstScreen');
 const secondScreen = document.getElementById('secondScreen');
-const btn1 = document.getElementById('btn1');
-const titleName = document.getElementById('titleName');
+const btn1 = document.getElementById('btn-home');
+const modalType = document.getElementById('modalType');
+const modalWeight = document.getElementById('modalWeight');
+const modalHeight = document.getElementById('modalHeight');
+const imgModal = document.getElementById('imgModal');
+const nameModal = document.getElementById('nameModal');
 const infoContent = document.getElementById('infoContent');
-const mSize = document.getElementById('mSize');
-const mStats = document.getElementById('mStats');
 const mResis = document.getElementById('mResis');
 const pokeModal = document.getElementById('pokeModal');
 // llamado a la data
@@ -21,11 +23,16 @@ export const allPokemon = data.pokemon;
 
 const showModal = (pokemon) => {
   pokeModal.style.display = 'block';
-  titleName.innerHTML = pokemon.name.toUpperCase();
-  infoContent.innerHTML = `About: ${pokemon.about}`;
-  mSize.innerHTML = `Size: ${pokemon.size.height}, ${pokemon.size.weight}`;
-  mStats.innerHTML = `Eggs: ${pokemon.egg}`;
-  mResis.innerHTML = `Resistant: ${pokemon.resistant}`;
+  const imgMo = document.createElement('img');
+  imgMo.src = pokemon.img;
+  imgModal.innerHTML = "";
+  imgModal.appendChild(imgMo);
+  nameModal.innerHTML = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+  infoContent.innerHTML = `${pokemon.about}`;
+  modalType.innerHTML = `${pokemon.type}`;
+  modalWeight.innerHTML = `${pokemon.size.weight}`;
+  modalHeight.innerHTML = ` ${pokemon.size.height}`;
+  mResis.innerHTML = `${pokemon.resistant}`;
 };
 
 // crear var, div dinamicos de las cartas de cada Pokemon(imagen, numero, nomb.)
@@ -42,12 +49,18 @@ const showPokemonInfo = (allPoke) => {
     const mayus = pokeName.charAt(0).toUpperCase() + pokeName.slice(1);
     const typePokemon = document.createElement('p');
     const typePokemon2 = document.createElement('p');
+    const typeCont = document.createElement('div');
+    const innerCard = document.createElement('div');
     pokeCard.setAttribute('id', 'pCard');
 
     // le damos una clase y le pasamos el parametro
     pokeCard.classList.add('nameCard');
     num.classList.add('numeros');
     names.classList.add('nombres');
+    typeCont.classList.add('orderType');
+    innerCard.classList.add('innerCard');
+    mResis.classList.add('mResistant');
+
     typePokemon.classList.add(pokeType[0]);
     if ((pokeType.length) > 1) {
       typePokemon2.classList.add(pokeType[1]);
@@ -57,7 +70,7 @@ const showPokemonInfo = (allPoke) => {
       showModal(pokemon);
     });
 
-    // le ponemos ih para que la variable se refleje
+    
     num.innerHTML = `# ${pokeNum}`;
     names.innerHTML = mayus;
     pokeImg.src = pokemon.img;
@@ -68,13 +81,13 @@ const showPokemonInfo = (allPoke) => {
 
     const containerDiv = document.getElementById('pokemonContainer'); // creamos un contenedor para todas las tarjetas que contendran los pokemones adentro
     containerDiv.appendChild(pokeCard);
-
-    // unimos el contenedor pokecard (tarjetas) con la img y abajo con el numero
     pokeCard.appendChild(pokeImg);
-    pokeCard.appendChild(num);
-    pokeCard.appendChild(names);
-    pokeCard.appendChild(typePokemon);
-    if ((pokeType.length) > 1) { pokeCard.appendChild(typePokemon2); }
+    pokeCard.appendChild(innerCard);
+    innerCard.appendChild(num);
+    innerCard.appendChild(names);
+    innerCard.appendChild(typeCont);
+    typeCont.appendChild(typePokemon);
+    if ((pokeType.length) > 1) { typeCont.appendChild(typePokemon2); }
   });
 };
 
