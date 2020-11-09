@@ -1,6 +1,6 @@
 * {
-	margin: 0px auto;
-	padding: 0px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 body,
@@ -45,7 +45,7 @@ html {
   font-size: 40px;
   color: #FFFFFF;
   line-height: 100px;
-  padding-left: 10%;
+  --padding-left: 10%;
 }
 
 .welcome-text {
@@ -54,7 +54,7 @@ html {
   font-size: 20px;
   color: #FFFFFF;
   line-height: 18px;
-  padding-left: 10%;
+  --padding-left: 10%;
 }
 
 .pika {
@@ -64,7 +64,7 @@ html {
 /* Botón bienvenida */
 .button-home{
   width: 100%;
-  padding-left: 10%;
+  --padding-left: 10%;
   margin-top: 10%;
 }
 
