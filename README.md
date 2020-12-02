@@ -226,6 +226,6 @@ PROCESO:TERMINADO
 ![rediseno2](https://github.com/victoria-ancalaf/SCL014-data-lovers/blob/dev/src/images/rediseno2.PNG)
 
 # Link Demo
-
+https://victoria-ancalaf.github.io/SCL014-data-lovers/src/
 
 
