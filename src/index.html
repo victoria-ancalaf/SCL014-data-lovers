@@ -19,12 +19,11 @@
         ¡Bienvenido!
       </h1>
       <p class="welcome-text">
-        Aquí podrás revisar la información de los Pokémon<br></br>
-        de la región de Kanto y Johto, usando filtros para<br></br> 
+        Aquí podrás revisar la información de los Pokémon
+        de la región de Kanto y Johto, usando filtros para
         buscar por nombre, tipo, debilidad y otros. 
       </p>
     </div>
-    <!-- <img class="pika" src="/src/images/pika.png"/> -->
     <div class="button-home">
       <button id="btn-home" class="btn-home">Comenzar</button>
     </div>
@@ -37,8 +36,8 @@
    
     <nav id="searchBar" class="navbar">
       
-      <select name="tipo" id="tipo">
-        <option value="0" select="selected">Type</option>
+      <select name="tipo" id="tipo" class="filter-type-menu">
+        <option value="0" select="selected">Tipo</option>
         <option value="grass">Grass</option>
         <option value="poison">Poison</option>
         <option value="normal">Normal</option>
@@ -60,8 +59,8 @@
       </select>
 
      
-      <select id="debilidad">
-        <option value="0">Weaknesses</option>
+      <select id="debilidad" class="filter-type-menu">
+        <option value="0">Debilidad</option>
         <option value="grass">Grass</option>
         <option value="poison">Poison</option>
         <option value="fighting">Fighting</option>
@@ -82,13 +81,13 @@
       </select>
 
       
-      <select id="generacion">
-        <option value="0">Generation</option>
+      <select id="generacion" class="filter-type-menu">
+        <option value="0">Generación</option>
         <option value="kanto">Kanto</option>
         <option value="johto">Johto</option>
       </select>
 
-      <input type="search" id="searchPokemon" class="searchP" placeholder="Busca por nombre" />
+      <input type="search" id="searchPokemon" class="searchP" placeholder="Buscar por nombre" />
    
     </nav>
 

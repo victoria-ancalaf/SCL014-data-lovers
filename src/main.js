@@ -30,9 +30,9 @@ const showModal = (pokemon) => {
   nameModal.innerHTML = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
   infoContent.innerHTML = `${pokemon.about}`;
   modalType.innerHTML = `${pokemon.type}`;
-  modalWeight.innerHTML = `${pokemon.size.weight}`;
-  modalHeight.innerHTML = ` ${pokemon.size.height}`;
-  mResis.innerHTML = `${pokemon.resistant}`;
+  modalWeight.innerHTML = `Weight: ${pokemon.size.weight}`;
+  modalHeight.innerHTML = `Height: ${pokemon.size.height}`;
+  mResis.innerHTML = `Resistant: ${pokemon.resistant}`;
 };
 
 // crear var, div dinamicos de las cartas de cada Pokemon(imagen, numero, nomb.)
@@ -60,6 +60,8 @@ const showPokemonInfo = (allPoke) => {
     typeCont.classList.add('orderType');
     innerCard.classList.add('innerCard');
     mResis.classList.add('mResistant');
+    modalType.classList.add('mType');
+    infoContent.classList.add('aboutPokemon');
 
     typePokemon.classList.add(pokeType[0]);
     if ((pokeType.length) > 1) {
