@@ -49,7 +49,7 @@ FOTO TRELLO
  
  ## SINTESIS Y DEFINICION
 
- aqui simplemente recolectamos toda la informacion que nos entregaron nuestros usiarios llegando a entender que es lo que realmente necesitaban tales como filtros especificos u informacion especifica, nos concentramos en realizar un diagrama basico para dar con la problematica la informacion y posible solucion. en esta etapa nacieron nuestras primeras dos historias de usuarios h1 (detallo cada historia al final de la lectura)
+ Aquí simplemente recolectamos toda la información que nos entregaron nuestros usiarios llegando a entender que es lo que realmente necesitaban tales como filtros especificos u informacion especifica, nos concentramos en realizar un diagrama basico para dar con la problematica la informacion y posible solucion. en esta etapa nacieron nuestras primeras dos historias de usuarios h1 (detallo cada historia al final de la lectura)
 
  
  FOTO DIAGRAMA
@@ -83,13 +83,13 @@ FOTOS INVISION
 
 ![INV3](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV3.png)
 
- ![INV4](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV4.png)
+![INV4](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV4.png)
  
- ![INV5](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV5.png)
+![INV5](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV5.png)
  
- ![INV6](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV6.png)
+![INV6](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV6.png)
  
-  ![INV7](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV7.png)
+![INV7](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/INV7.png)
  
 
 
@@ -220,7 +220,12 @@ PROCESO:TERMINADO
 
 ![MODAL](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/MODAL.png)
 
-## Link Demo
+
+## Iteración Diseño 
+![rediseno1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/MODAL.png)
+![rediseno2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/MODAL.png)
+
+# Link Demo
 
 
 
