@@ -1,28 +1,28 @@
 * {
-	margin: 0 auto;
-	padding: 0;
+  margin: 0 auto;
+  padding: 0;
 }
 
 body,
 html {
-	height: 100%;
+  height: 100%;
 }
 
 /*Pantalla Bienvenida */
 .home {
-	display: flex;
-	width: 100%;
-	height: 100vh;
-	background: linear-gradient(180deg, #489cc1 0%, #2ecbaa 100%);
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #489cc1 0%, #2ecbaa 100%);
 }
 
 .home-left {
-	width: 50%;
-	background-image: url(images/home-bg.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	mix-blend-mode: lighten;
+  width: 50%;
+  background-image: url(images/home-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: lighten;
 }
 
 .home-right {
@@ -32,444 +32,477 @@ html {
   justify-content: space-evenly;
 }
 
-.info-text{
+.info-text {
   display: flex;
-  width: 100%;
   flex-direction: column;
 }
 
 .title {
-  width: 100%;
+  width: 60%;
   font-family: "Varta", sans-serif;
   font-weight: bold;
   font-size: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 100px;
-  --padding-left: 10%;
 }
 
 .welcome-text {
-  width: 100%;
+  width: 60%;
   font-family: "Varta", sans-serif;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 18px;
-  --padding-left: 10%;
-}
-
-.pika {
-  width: 30%;
 }
 
 /* Botón bienvenida */
-.button-home{
-  width: 100%;
-  --padding-left: 10%;
-  margin-top: 10%;
-}
 
 .btn-home {
-	width: 425px;
-	height: 70px;
-	background: #cef2dc;
-	border-radius: 10px;
-	border-style: none;
-	font-family: "Varta", sans-serif;
-	font-size: 35px;
-	color: #194646;
-	transition: all 0.5s;
+  width: 350px;
+  height: 70px;
+  background: #cef2dc;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Varta", sans-serif;
+  font-size: 30px;
+  color: #194646;
+  transition: all 0.5s;
 }
 
 .btn-home:hover {
-	cursor: pointer;
-	background-color: #74f6a7;
+  cursor: pointer;
+  background-color: #74f6a7;
 }
 
 /* Segunda Pantalla (principal)*/
 .container {
-	width: 100%;
-	display: none;
-	flex-wrap: wrap;
+  width: 100%;
+  display: none;
+  flex-wrap: wrap;
 }
 
 /* Menú filtros */
 .navbar {
-	position: sticky;
-	top: 0;
-	width: 100%;
-	height: 70px;
-	background-color: #7ed782ba;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #2ECBAA;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.filter-type-menu {
+  width: 200px;
+  height: 50px;
+  background-color: #CEF2DC;
+  border-style: none;
+  font-family: "Varta", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 /* input de escritura buscador */
 .searchP {
-	font-family: "Varta", sans-serif;
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  border-style: none;
+  font-family: "Varta", sans-serif;
+  text-align: center;
 }
 
 /* Contenedor de Pokémon */
 #pokemonContainer {
-	background-color: #f2f6f4;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  background-color: #f2f6f4;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Cartitas Pokémon */
 .nameCard {
-	background: linear-gradient(180deg, #489cc1 0%, #2ecbaa 100%);
-	width: 159px;
-	height: 191px;
-	border-radius: 3px;
-	display: flex;
-	flex-direction: column;
-	padding: 2em;
-	margin-block-end: 20px;
-	margin-left: 20px;
-	margin-inline-end: 12px;
-	margin-block-start: 5px;
-	margin-top: 17px;
+  background: linear-gradient(180deg, #489cc1 0%, #2ecbaa 100%);
+  width: 159px;
+  height: 191px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin-block-end: 20px;
+  margin-left: 20px;
+  margin-inline-end: 12px;
+  margin-block-start: 5px;
+  margin-top: 17px;
 }
 
 .nameCard:hover {
-	-webkit-box-shadow: 0px 12px 21px -1px rgba(0, 0, 0, 0.64);
-	-moz-box-shadow: 0px 12px 21px -1px rgba(0, 0, 0, 0.64);
-	box-shadow: 0px 12px 21px -1px rgba(0, 0, 0, 0.64);
-	cursor: pointer;
-	background-color: #489cc1;
+  -webkit-box-shadow: 0px 12px 21px -1px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 0px 12px 21px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 0px 12px 21px -1px rgba(0, 0, 0, 0.64);
+  cursor: pointer;
+  background-color: #489cc1;
 }
 
 .nameCard > img {
-	position: relative;
+  position: relative;
 }
 
 .orderType {
-	display: flex;
-	justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .innerCard {
-	background-color: #f9fef7;
-	width: 90%;
-	height: 53%;
-	border-radius: 5px;
-	margin-top: -25%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+  background-color: #f9fef7;
+  width: 90%;
+  height: 53%;
+  border-radius: 5px;
+  margin-top: -25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .numeros {
-	width: 5em;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: #43a680;
+  width: 5em;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: #43a680;
 }
 
 .nombres {
-	width: 5em;
-	font-family: "Varta", sans-serif;
-	font-size: large;
-	font-weight: 600;
-	text-align: center;
-	color: #034866;
-	margin-bottom: 3%;
+  width: 5em;
+  font-family: "Varta", sans-serif;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+  color: #034866;
+  margin-bottom: 3%;
 }
 
 /* Modal */
 .mModal {
-	display: none;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #489cc1;
-	width: 335px;
-	height: 364px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #489cc1;
+  width: 335px;
+  height: 364px;
 }
 
 .innerModal {
-	display: flex;
-	flex-direction: column;
-	background-color: #f9fef7;
-	width: 312px;
-	height: 267px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fef7;
+  width: 312px;
+  height: 267px;
 }
 
 #nameModal {
-	font-family: "Varta", sans-serif;
-	font-size: 18px;
-	color: #072e2e;
+  font-family: "Varta", sans-serif;
+  font-size: 20px;
+  color: #072e2e;
+  font-weight: bold;
+}
+
+.aboutPokemon {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .mContent {
-	font-family: "Roboto Condensed", sans-serif;
-	font-size: 13px;
-	color: #095739;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px;
+  color: #095739;
 }
 
 .mResistant {
-	font-family: "Varta", sans-serif;
-	font-size: 12px;
-	color: #072e2e;
+  font-family: "Varta", sans-serif;
+  font-size: 12px;
+  color: #072e2e;
+}
+
+.mType {
+  font-family: "Varta", sans-serif;
+  color: #489cc1;
+  font-weight: bold;
 }
 
 .closeBtn {
-	border: none;
-	outline: none;
-	background: none;
-	margin-left: 90%;
-	color: #f9fef7;
-	font-size: 30px;
-	font-weight: bold;
+  border: none;
+  outline: none;
+  background: none;
+  margin-left: 90%;
+  color: #f9fef7;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .closeBtn:hover {
-	cursor: pointer;
-	color: rgba(145, 148, 145, 0.801);
+  cursor: pointer;
+  color: #7ed782ba;
 }
 
 /* Info tipos de Pokémon */
 .grass {
-	background-color: #14be14;
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: #14be14;
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .poison {
-	background-color: purple;
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: purple;
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .normal {
-	background-color: rgb(163, 163, 140);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(163, 163, 140);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .fighting {
-	background-color: rgb(184, 20, 20);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(184, 20, 20);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .flying {
-	background-color: rgb(193, 113, 230);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(193, 113, 230);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .ground {
-	background-color: rgb(204, 186, 27);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(204, 186, 27);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .rock {
-	background-color: rgb(128, 122, 50);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(128, 122, 50);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .bug {
-	background-color: rgb(149, 179, 93);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(149, 179, 93);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .ghost {
-	background-color: rgb(76, 45, 134);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(76, 45, 134);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .steel {
-	background-color: rgb(110, 107, 109);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(110, 107, 109);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .fire {
-	background-color: rgb(238, 136, 41);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(238, 136, 41);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .water {
-	background-color: rgb(15, 157, 223);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(15, 157, 223);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .electric {
-	background-color: rgb(250, 246, 11);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: black;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(250, 246, 11);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: black;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .psychic {
-	background-color: rgb(201, 63, 132);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(201, 63, 132);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .ice {
-	background-color: rgb(134, 218, 221);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(134, 218, 221);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .dragon {
-	background-color: rgb(79, 22, 235);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(79, 22, 235);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .fairy {
-	background-color: rgb(219, 157, 188);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(219, 157, 188);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 .dark {
-	background-color: rgb(49, 37, 37);
-	border-radius: 25px;
-	width: 50px;
-	font-family: "Varta", sans-serif;
-	font-size: small;
-	color: white;
-	text-align: center;
-	margin-block-end: 3px;
+  background-color: rgb(49, 37, 37);
+  border-radius: 25px;
+  width: 50px;
+  font-family: "Varta", sans-serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-block-end: 3px;
 }
 
 /* Reponsive */
 /* Celulares */
-@media only screen and (max-width: 380px) {
-	.welcome {
-		margin-left: 2rem;
-	}
-	.btn1 {
-		margin-left: 6rem;
-		width: 50%;
-		background-color: #ffcb05;
-	}
-	.container .navbar .nameCard {
-		flex-direction: column;
-	}
+@media only screen and (max-width: 768px) {
+  .home-left {
+    display: none;
+  }
 
-	#searchBar {
-		flex-direction: column-reverse;
-		align-items: flex-start;
-	}
+  home-right {
+    width: 100%;
+  }
 
-	#tipo,
-	#debilidad,
-	#generacion,
-	.searchP {
-		width: 100%;
-		flex-direction: column;
-		text-align: center;
-		border: none;
-		border-radius: 0;
-		margin: 0;
-		font-size: 15px;
-		position: initial;
-		text-align: center;
-	}
-	.nameCard {
-		width: 30%;
-		margin: 16px;
-		padding: 16px;
-	}
-	.foot {
-		display: none;
-	}
+  .btn-home {
+    width: 225px;
+    height: 70px;
+    font-size: 25px;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .welcome-text {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .container .navbar .nameCard {
+    flex-direction: column;
+  }
+
+  #searchBar {
+    flex-direction: column-reverse;
+	align-items: flex-start;
+  }
+
+  #tipo,
+  #debilidad,
+  #generacion,
+  .searchP {
+	width: 100%;
+	height: 70px;
+    flex-direction: column;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    font-size: 15px;
+	text-align: center;
+  }
+  .nameCard {
+    width: 30%;
+    margin: 16px;
+    padding: 16px;
+  }
+ 
 }
