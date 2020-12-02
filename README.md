@@ -222,8 +222,8 @@ PROCESO:TERMINADO
 
 
 ## Iteración Diseño 
-![rediseno1](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/MODAL.png)
-![rediseno2](https://github.com/Ladypino/SCL014-data-lovers/blob/master/src/images/MODAL.png)
+![rediseno1](https://github.com/victoria-ancalaf/SCL014-data-lovers/blob/dev/src/images/rediseno1.PNG)
+![rediseno2](https://github.com/victoria-ancalaf/SCL014-data-lovers/blob/dev/src/images/rediseno2.PNG)
 
 # Link Demo
 
